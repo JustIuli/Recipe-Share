@@ -1,0 +1,27 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr)); /* Default: 4 columns */
+    gap: 0.4rem;
+}
+
+@media (min-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(6, minmax(0, 1fr)); /* Medium screens: 6 columns */
+    }
+}
+
+@media (min-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: repeat(8, minmax(0, 1fr)); /* Large screens: 8 columns */
+    }
+}
+
+.gridItem {
+    grid-column: span 2;
+}
+.title{
+    text-decoration: none;
+    max-width: 90%;
+    word-break: break-word;
+    color: light-dark(#141414,#C9C9C9);
+}

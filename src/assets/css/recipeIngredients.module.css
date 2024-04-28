@@ -1,0 +1,35 @@
+.ingredientGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.ingredientItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ingredientImage {
+    width: 3rem;
+    height: 3rem;
+}
+
+.ingredientDetails {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ingredientQuantity {
+    font-weight: bold;
+}
+
+.ingredientName {
+    margin: 0;
+}
+
+.text{
+    max-width: 95%;
+    word-break: break-word;
+}
